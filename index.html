@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en" class="hydrated">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMADHAN Portal | AtalNagar </title>
+    <link rel="stylesheet" href="tyle.css">
+    <link rel="shortcut icon" href="images.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">SAMADHAN</p>
+      </div> -->
+
+    <header class="header" data-header>
+        <div class="overlay" data-overlay></div>
+        <div class="header-peak">
+            <a href="#main" class="skip-link">Skip to Main Content</a>
+            <ul class="nav">
+                <li class="nav-item">
+                    <span id="currentDateTime" class="nav-link link-light"></span>
+                </li>
+                <li class="nav-item">
+                    <button id="decfont" class="nav-link link-light px-2 font-inc font-btn" id="decfont"> A
+                        <sup>-</sup></button>
+                </li>
+                <li class="nav-item">
+                    <button id="resetFont" class="nav-link link-light px-2 font-inc active font-btn" id="resetFont"> A
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button id="incfont" class="nav-link link-light px-2 font-inc font-btn" id="incfont"> A
+                        <sup>+</sup></button>
+                </li>
+            </ul>
+
+            <ul class="nav-item">
+                <div class="language-dropdown">
+                    <button class="btn btn-tertiary dropdown-toggle" id="dropdown-text-mob" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="language-text">English</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="nav-link f16 link-light english-box language" href="/en.html">
+                                <div class="en-language active-language">
+                                    <span class="language-icon">A</span>
+                                    <span class="language-text">English</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="nav-link f16 language hindi-box link-light" href="/hi.html">
+                                <div class="hin-language">
+                                    <span class="language-icon">अ</span>
+                                    <span class="language-text">हिन्दी</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </ui>
+            </ul>
+        </div>
+
+
+
+        <div class="header-top">
+            <div class="container">
+                <a href="https://navaraipuratalnagar.com/" class="emblem">
+                    <div class="icon-box">
+                        <img src="emblem.png">
+                    </div>
+
+                    <div class="wrapper">
+                        <p class="title">AtalNagar</p>
+
+                        <p class="city">Nawa Raipur</p>
+                    </div>
+
+                    <a href="#" class="logo">
+                        <img src="logo.png" alt="SAMADHAN logo">
+                    </a>
+
+                    <div class="header-btn-group">
+
+                        <div class="search-box">
+                            <button id="searchIcon" class="search-btn" aria-label="Search">
+                                <ion-icon name="search" role="img" class="md hydrated" aria-label="search"></ion-icon>
+                            </button>
+                        </div>
+
+                        <!-- The search pop-up (hidden by default) -->
+                        <div id="searchPopup" class="search-popup">
+                            <div class="search-popup-content">
+                                <span class="close-popup" id="closePopup">&times;</span>
+                                <input type="text" id="searchInput" placeholder="Search...">
+                                <button id="searchButton" class="search-btn" aria-label="Search">Search</button>
+                            </div>
+                        </div>
+
+
+                        <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+                            <ion-icon name="menu-outline" role="img" class="md hydrated" aria-label="menu outline">
+                            </ion-icon>
+                        </button>
+
+
+                    </div>
+
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+
+                <ul class="social-list">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <!-- <i class="fa-brands fa-x-twitter"></i> -->
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <nav class="navbar" data-navbar>
+
+                    <!-- <div class="navbar-top">
+        
+                    <a href="#" class="logo">
+                        <img src="logo-blue.svg" alt="Tourly logo">
+                    </a>
+        
+                    <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+        
+                    </div> -->
+
+                    <ul class="navbar-list">
+
+                        <li>
+                            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#about" class="navbar-link" data-nav-link>About AtalNagar</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html" class="navbar-link" data-nav-link>Online Services</a>
+                        </li>
+
+                        <li>
+                            <a href="#reports" class="navbar-link" data-nav-link>Maps & Reports</a>
+                        </li>
+
+                        <li>
+                            <a href="#masterplan" class="navbar-link" data-nav-link>Master Plan 2028</a>
+                        </li>
+                        <li>
+                            <a href="#masterplan" class="navbar-link" data-nav-link>Help</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <button class="btn btn-primary"><a href="login.html">My Dashboard</a></button>
+
+                <button class="btn btn-secondary">Quick Pay</button>
+
+
+            </div>
+        </div>
+
+        <div class="marquee-parent">
+            <div class="marquee-child">
+                <div class="marquee-content">
+                    <a href="#" target="_blank">Software Application for Monitoring And Disposal, Handling of services
+                        and grievances in Atal Nagar</a>
+                </div>
+            </div>
+        </div>
+        <div class="videoSlider">
+            <section class="video-section">
+                <div class="video-container">
+                    <!-- <div class="text-box">
+                        <h1>Welcome To SAMADHAN</h1>
+                    </div> -->
+                    <video id="myVideo " width="100%" class="elVideo banner-video d-none d-sm-block" loop="loop"
+                        autoplay="" playsinline="" muted="" src="banner.mp4"></video>
+                </div>
+            </section>
+        </div>
+    </header>
+    <section id="main">
+        <div class="main-content">
+            <div id="how-g20-works" class="image-with-text" style="background-image:url(First.png)">
+                <div class="container">
+                    <div class="row">
+                        <div class="col image-with-text-title text-center">
+                            <h2>SAMADHAN - A Unified Citizen Portal </h2>
+                        </div>
+                    </div>
+                    <div class="row d-flex flex-md-row flex-column-reverse m-0">
+                        <div class="col col-md-7 image-with-text-text order2">
+                            <ul>
+                                <li>The purpose of the SAMADHAN project is to create a comprehensive software
+                                    application called "SAMADHAN" (Software Application for Monitoring And Disposal,
+                                    Handling of services and grievances in Atal Nagar) that serves as a one-stop
+                                    solution portal for the City Municipal Corporation. </li>
+                                <li> The project aims to enhance the quality of service delivery, improve citizen
+                                    experience, and promote transparent and responsive governance through automated and
+                                    streamlined service delivery.</li>
+
+                                <li>Through this portal, citizens can conveniently perform tasks such as making payments
+                                    for taxes and bills, raise grievances, and seek assistance with urban issues. </li>
+                                <li>Also Citizen can lodge their Grievance 24x7 to the public authorities on any subject
+                                    related to service delivery. The status of the grievance filed can be tracked with
+                                    the unique registration ID provided at the time of registration of the complainant
+                                    to user.</li>
+                                <li>The application also facilitates the tracking of essential services, including
+                                    garbage collection vehicles. </li>
+                                <li>SAMADHAN is envisioned as a transformative effort to enhance the quality of service
+                                    delivery, increase transparency in governance, and improve the overall experience of
+                                    citizens when interacting with their municipal corporation. </li>
+
+
+                            </ul>
+
+                        </div>
+                        <div class="col col-md-5 align-self-center image-with-text-image order1">
+                            <img src="logos.png" class="img-fluid" alt="imag-with-text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- <section id="newsgallery">
+        <div class="news-gallery aem-GridColumn aem-GridColumn--default--12">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col px-4 pt-3">
+                        <h2 class="section-heading f48">What’s New</h2>
+                    </div>
+
+                </div>
+
+
+                <nav>
+                    <div class="nav nav-tabs hidden-md-up thin" id="nav-tab" role="tablist">
+                        <a class="nav-link active tabs-heading" id="press-releases-tab" data-bs-toggle="tab"
+                            data-bs-target="#press-releases" role="tab" aria-controls="press-releases"
+                            aria-selected="true">Press Releases</a>
+
+                        <a class="nav-link tabs-heading" id="social-media-tab" data-bs-toggle="tab"
+                            data-bs-target="#social-media" role="tab" aria-controls="social-media" aria-selected="false"
+                            tabindex="-1">Social Media</a>
+
+                        <a class="nav-link tabs-heading" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery"
+                            role="tab" aria-controls="gallery" aria-selected="false" tabindex="-1">Delegates'
+                            Experiences</a>
+
+
+
+                    </div>
+                </nav>
+                <div class="row tab-content pt-2" id="nav-tabContent">
+
+
+                    <div role="tabpanel"
+                        class="tab-pane active col col-12 col-md-4 px-4 pt-2 pb-4 animated animatedFadeInUp fadeInUp"
+                        id="press-releases" aria-labelledby="press-releases-tab">
+
+                        <div class="title-hide">
+                            <h2 class="news-col-heading f24">Press Releases</h2>
+                            <hr>
+                        </div>
+
+                        <div class="vscrollbar vscrollbar-blue border-blue thin pt-2">
+
+
+
+
+
+
+                            <div class="d-flex mb-3 border-bottom pb-2">
+                                <div class="flex-shrink-1 d-flex align-items-start">
+
+                                    <img class="img-fluid pdf-icon"
+                                        src="/content/dam/gtwenty/visa-requirement/icons8-external-link.png"
+                                        alt="pdf icon">
+
+                                </div>
+                                <div class="w-100 ps-3">
+                                    <div class="row">
+                                        <div class="col-12">
+
+                                            <a class="text-decoration-none"
+                                                href="/en/media-resources/press-releases/october-2023/pm-inaugurates-p20.html">
+                                                <h3 class="news-heading f20">Prime Minister to inaugurate 9th G20
+                                                    Parliamentary Speakers' Summit (P-20) in New Delhi on 13th October
+                                                </h3>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="news-date mb-0 f12">October 06, 2023</p>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <p class="news-link mb-0 f13"><a class="read-more"
+                                                    href="/en/media-resources/press-releases/october-2023/pm-inaugurates-p20.html">Read
+                                                    More<span class="visually-hidden">Prime Minister to inaugurate 9th
+                                                        G20 Parliamentary Speakers' Summit (P-20) in New Delhi on 13th
+                                                        October</span></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <div class="d-flex mb-3 border-bottom pb-2">
+                                <div class="flex-shrink-1 d-flex align-items-start">
+
+                                    <img class="img-fluid pdf-icon"
+                                        src="/content/dam/gtwenty/visa-requirement/icons8-external-link.png"
+                                        alt="pdf icon">
+
+                                </div>
+                                <div class="w-100 ps-3">
+                                    <div class="row">
+                                        <div class="col-12">
+
+                                            <a class="text-decoration-none"
+                                                href="/en/media-resources/press-releases/september-2023/university-connect-finale.html">
+                                                <h3 class="news-heading f20">PM addresses G20 University Connect Finale
+                                                </h3>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="news-date mb-0 f12">September 26, 2023</p>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <p class="news-link mb-0 f13"><a class="read-more"
+                                                    href="/en/media-resources/press-releases/september-2023/university-connect-finale.html">Read
+                                                    More<span class="visually-hidden">PM addresses G20 University
+                                                        Connect Finale</span></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <div class="d-flex mb-3 border-bottom pb-2">
+                                <div class="flex-shrink-1 d-flex align-items-start">
+
+                                    <img class="img-fluid pdf-icon"
+                                        src="/content/dam/gtwenty/visa-requirement/icons8-external-link.png"
+                                        alt="pdf icon">
+
+                                </div>
+                                <div class="w-100 ps-3">
+                                    <div class="row">
+                                        <div class="col-12">
+
+                                            <a class="text-decoration-none"
+                                                href="/en/media-resources/press-releases/september-2023/pm-interaction.html">
+                                                <h3 class="news-heading f20">PM Narendra Modi interacts with ground
+                                                    level functionaries of G20 Summit at Bharat Mandapam</h3>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="news-date mb-0 f12">September 22, 2023</p>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <p class="news-link mb-0 f13"><a class="read-more"
+                                                    href="/en/media-resources/press-releases/september-2023/pm-interaction.html">Read
+                                                    More<span class="visually-hidden">PM Narendra Modi interacts with
+                                                        ground level functionaries of G20 Summit at Bharat
+                                                        Mandapam</span></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <div class="d-flex mb-3 border-bottom pb-2">
+                                <div class="flex-shrink-1 d-flex align-items-start">
+
+                                    <img class="img-fluid pdf-icon"
+                                        src="/content/dam/gtwenty/visa-requirement/icons8-external-link.png"
+                                        alt="pdf icon">
+
+                                </div>
+                                <div class="w-100 ps-3">
+                                    <div class="row">
+                                        <div class="col-12">
+
+                                            <a class="text-decoration-none"
+                                                href="/en/media-resources/press-releases/september-2023/g20-presidency.html">
+                                                <h3 class="news-heading f20">India’s presidency of G20 has been
+                                                    inclusive, ambitious and people-centric, says the Vice-President
+                                                </h3>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="news-date mb-0 f12">September 18, 2023</p>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <p class="news-link mb-0 f13"><a class="read-more"
+                                                    href="/en/media-resources/press-releases/september-2023/g20-presidency.html">Read
+                                                    More<span class="visually-hidden">India’s presidency of G20 has been
+                                                        inclusive, ambitious and people-centric, says the
+                                                        Vice-President</span></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <
+
+
+
+
+
+
+                            <div class="d-flex mb-3 border-bottom pb-2">
+                                <div class="flex-shrink-1 d-flex align-items-start">
+
+                                    <img class="img-fluid pdf-icon"
+                                        src="/content/dam/gtwenty/visa-requirement/icons8-external-link.png"
+                                        alt="pdf icon">
+
+                                </div>
+                                <div class="w-100 ps-3">
+                                    <div class="row">
+                                        <div class="col-12">
+
+                                            <a class="text-decoration-none"
+                                                href="/en/media-resources/press-releases/september-2023/pm-acknowledgement.html">
+                                                <h3 class="news-heading f20">PM acknowledges commitment by G20 countries
+                                                    to urgently accelerate actions to address environmental crises and
+                                                    challenges</h3>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="news-date mb-0 f12">September 16, 2023</p>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <p class="news-link mb-0 f13"><a class="read-more"
+                                                    href="/en/media-resources/press-releases/september-2023/pm-acknowledgement.html">Read
+                                                    More<span class="visually-hidden">PM acknowledges commitment by G20
+                                                        countries to urgently accelerate actions to address
+                                                        environmental crises and challenges</span></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="pt-3 btn-mobile">
+                            <a href="/en/media-resources/press-releases.html" class="btn float-md-end">
+                                View all<span class="visually-hidden">Press Releases</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div role="tabpanel"
+                        class="tab-pane col-12 col-md-4 pt-2 px-4 pb-4 animated animatedFadeInUp fadeInUp2"
+                        id="social-media" aria-labelledby="social-media-tab">
+                        <div class="title-hide">
+                            <h2 class="news-col-heading f24">Social Media</h2>
+                            <hr>
+                        </div>
+                        <div class="twitter-timeline twitter-timeline-rendered"
+                            style="display: flex; max-width: 100%; margin-top: 0px; margin-bottom: 0px;"><iframe
+                                id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true"
+                                allowfullscreen="true" class=""
+                                style="position: absolute; visibility: hidden; width: 0px; height: 0px; display: block; flex-grow: 1;"
+                                title="Twitter Timeline"
+                                src="https://syndication.twitter.com/srv/timeline-profile/screen-name/g20org?dnt=false&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&amp;frame=false&amp;hideBorder=false&amp;hideFooter=false&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=en&amp;origin=https%3A%2F%2Fwww.g20.org%2Fen.html&amp;sessionId=c76d9e2b78969167d674e882305d11c979482a46&amp;showHeader=true&amp;showReplies=false&amp;transparent=false&amp;widgetsVersion=7e31f10ca29dc%3A1696453545681"></iframe>
+                        </div><a class="twitter-timeline" href="https://twitter.com/g
+                            data-twitter-extracted-i1696768805994565145="true">Tweets by g20org</a>
+                        <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fg20org&tabs=timeline&width=332&height=350&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="350" style="border:none;overflow:hidden;border-radius: 10px;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> 
+
+                        <div class="pt-3 btn-mobile">
+                            <a href="/en/media-resources/social-media.html" class="btn float-md-end">
+                                View all <span class="visually-hidden">Social Media</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel"
+                        class="tab-pane col-12 col-md-4 pt-2 px-4 pb-4  animated animatedFadeInUp fadeInUp1"
+                        id="gallery" aria-labelledby="gallery-tab">
+                        <div class="title-hide">
+                            <h2 class="news-col-heading f24">Delegates' Experiences</h2>
+                            <hr>
+                        </div>
+
+                        <div class="vscrollbar vscrollbar-blue border-blue thin pt-2" id="delegateHomeBite">
+                            <div class="d-flex mb-3 border-bottom pb-3">
+                                <div class="flex-shrink-1 d-flex align-items-start"><a class="text-decoration-none"
+                                        target="_blank" href="https://www.youtube.com/watch?v=Coffp1HHmLs"><img
+                                            class="img-fluid delegates-bytes-img rounded-1"
+                                            src=" /content/dam/gtwenty/gtwenty_new/video/video-thunails/sep-2023/15-sep_India's Digital Public.png "
+                                            width="30px" height="30px" alt="pdf logo"
+                                            title="India's Digital Public Infrastructure praised at B20 Summit in New Delhi"></a>
+                                    <div class="w-100 ps-3"><a class="text-decoration-none" target="_blank"
+                                            href="https://www.youtube.com/watch?v=Coffp1HHmLs">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="d-flex align-items-top justify-content-between">
+                                                        <div>
+                                                            <h3
+                                                                class="font-jakarta fw-bold f20 mb-0 news-heading text-break">
+                                                                India's Digital Public Infrastructure praised at B20
+                                                                Summit in New Delhi</h3>
+                                                            <h5 class="f16 text-dark">New Delhi </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3 border-bottom pb-3">
+                                <div class="flex-shrink-1 d-flex align-items-start"><a class="text-decoration-none"
+                                        target="_blank" href="https://www.youtube.com/watch?v=LZOFGofv6yg"><img
+                                            class="img-fluid delegates-bytes-img rounded-1"
+                                            src=" /content/dam/gtwenty/gtwenty_new/video/video-thunails/aug-2023/Digital_Economy_Ministers_Meeting.JPG "
+                                            width="30px" height="30px" alt="pdf logo"
+                                            title="G20 Ministers commend India’s digital transformation story in Bengaluru"></a>
+                                    <div class="w-100 ps-3"><a class="text-decoration-none" target="_blank"
+                                            href="https://www.youtube.com/watch?v=LZOFGofv6yg">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="d-flex align-items-top justify-content-between">
+                                                        <div>
+                                                            <h3
+                                                                class="font-jakarta fw-bold f20 mb-0 news-heading text-break">
+                                                                G20 Ministers commend India’s digital transformation
+                                                                story in Bengaluru</h3>
+                                                            <h5 class="f16 text-dark">Karnataka</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3 border-bottom pb-3">
+                                <div class="flex-shrink-1 d-flex align-items-start"><a class="text-decoration-none"
+                                        target="_blank" href="https://www.youtube.com/watch?v=TLw_ZyYa65U"><img
+                                            class="img-fluid delegates-bytes-img rounded-1"
+                                            src=" /content/dam/gtwenty/gtwenty_new/video/video-thunails/aug-2023/Youth20_Summit.JPG "
+                                            width="30px" height="30px" alt="pdf logo"
+                                            title="Delegates come together to share best practices at the Youth20 Summit in Varanasi"></a>
+                                    <div class="w-100 ps-3"><a class="text-decoration-none" target="_blank"
+                                            href="https://www.youtube.com/watch?v=TLw_ZyYa65U">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="d-flex align-items-top justify-content-between">
+                                                        <div>
+                                                            <h3
+                                                                class="font-jakarta fw-bold f20 mb-0 news-heading text-break">
+                                                                Delegates come together to share best practices at the
+                                                                Youth20 Summit in Varanasi</h3>
+                                                            <h5 class="f16 text-dark">Uttar Pradesh </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3 border-bottom pb-3">
+                                <div class="flex-shrink-1 d-flex align-items-start"><a class="text-decoration-none"
+                                        target="_blank" href="https://www.youtube.com/watch?v=uyMYytdryEE"><img
+                                            class="img-fluid delegates-bytes-img rounded-1"
+                                            src=" /content/dam/gtwenty/gtwenty_new/video/video-thunails/aug-2023/Digital_Economy_Working_Group.JPG "
+                                            width="30px" height="30px" alt="pdf logo"
+                                            title="G20 Delegates in Bengaluru share their enthusiasm around productive DEWG meetings"></a>
+                                    <div class="w-100 ps-3"><a class="text-decoration-none" target="_blank"
+                                            href="https://www.youtube.com/watch?v=uyMYytdryEE">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="d-flex align-items-top justify-content-between">
+                                                        <div>
+                                                            <h3
+                                                                class="font-jakarta fw-bold f20 mb-0 news-heading text-break">
+                                                                G20 Delegates in Bengaluru share their enthusiasm around
+                                                                productive DEWG meetings</h3>
+                                                            <h5 class="f16 text-dark">Karnataka</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3 border-bottom pb-3">
+                                <div class="flex-shrink-1 d-flex align-items-start"><a class="text-decoration-none"
+                                        target="_blank" href="https://www.youtube.com/watch?v=26rAoSRoPe8"><img
+                                            class="img-fluid delegates-bytes-img rounded-1"
+                                            src=" /content/dam/gtwenty/gtwenty_new/video/video-thunails/aug-2023/07-aug-Indian Presidency’s focus on Women-gandhinagar.png "
+                                            width="30px" height="30px" alt="pdf logo"
+                                            title="Indian Presidency’s focus on Women-Led Development supported by G20 Delegates in Gandhinagar"></a>
+                                    <div class="w-100 ps-3"><a class="text-decoration-none" target="_blank"
+                                            href="https://www.youtube.com/watch?v=26rAoSRoPe8">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="d-flex align-items-top justify-content-between">
+                                                        <div>
+                                                            <h3
+                                                                class="font-jakarta fw-bold f20 mb-0 news-heading text-break">
+                                                                Indian Presidency’s focus on Women-Led Development
+                                                                supported by G20 Delegates in Gandhinagar</h3>
+                                                            <h5 class="f16 text-dark">Gujarat</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 btn-mobile">
+                            <a href="/en/media-resources/delegate-video-testimonial.html" class="btn float-md-end">
+                                View all<span class="visually-hidden">Delegates' Experiences</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem numquam id reprehenderit, sunt laudantium enim possimus repellat debitis et quis!</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><ion-icon name="location-outline"></ion-icon></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>402671 Sugar Camp Road,<br>Owatonna,Minnesota,<br>55025060</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><ion-icon name="call-outline"></ion-icon></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>000-000-0000</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>wrub7d78i0e@temporary-mail</p>
+                    </div>
+                </div>
+                <h2 class="txt">Connect with us</h2>
+                <ul class="sci">
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="Yojna">
+        
+    </section>
+
+
+    <script src="script.js"></script>
+    <!-- 
+            - ionicon link
+            -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    
+</body>
+
+</html>
